@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "weatherx"
+version = "0.1.0"
+description = ""
+authors = ["danielseussler <daniel.seussler@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+geopy = "^2.4.1"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+weatherx = "weatherx.cli:cli"
